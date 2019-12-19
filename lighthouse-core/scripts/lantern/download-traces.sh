@@ -29,7 +29,7 @@ rm -rf lantern-data/
 mkdir -p lantern-data/ && cd lantern-data
 echo $VERSION > version
 
-curl -o lantern-traces.tar.gz -L https://storage.googleapis.com/lh-lantern-data/lantern-traces-$VERSION.tar.gz
+curl -o golden-lantern-traces.zip -L https://storage.googleapis.com/lh-lantern-data/golden-lantern-traces-$VERSION.zip
 
-tar -xzf lantern-traces.tar.gz
-rm lantern-traces.tar.gz
+unzip -q golden-lantern-traces.zip
+# rm golden-lantern-traces.zip
